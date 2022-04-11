@@ -1,0 +1,22 @@
+version: '3'
+
+tasks:
+  build:
+    cmds:
+      - docker-compose up --build -d
+  up:
+    cmds:
+      - docker-compose up -d
+  rbuild:
+    cmds:
+      - task stop
+      - task build
+  stop:
+    cmds:
+      - docker stop sectum-front
+  srv-e:
+    cmds:
+      - docker exec -it sectum-front sh
+  run:
+    cmds:
+      - docker-compose exec front go run main.go
