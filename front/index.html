@@ -1,11 +1,11 @@
-<form action="/users" method="post">
+<form action="/users" method="post" enctype="multipart/form-data">
     <div>
-        <label for="name">Name: </label>
+        <label>Name: </label>
         <input type="text" name="name" required>
     </div>
     <div>
-        <label for="name">Color: </label>
-        <input type="color" name="color">
+        <label>File: </label>
+        <input type="file" name="file">
     </div>
     <div>
         <input type="submit">
