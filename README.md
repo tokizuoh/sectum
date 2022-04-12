@@ -7,5 +7,5 @@ Receive the POSTed value in `multipart/form-data` with Go.
 1. `task build`
 2. `task run`
 3. access to `localhost:8080`
-4. submit on 2
+4. submit on 3
 5. confirm that the POSTed value can be obtained in the Go code
